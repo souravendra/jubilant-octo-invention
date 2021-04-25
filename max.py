@@ -45,7 +45,7 @@ for file in files:
     else:
         output.append(str(calcmax(xVal, yVal, zVal)))
 
-dict = {'File': files, 'Max Value': output}
+dict = {'File': files, 'Max Value': output}  # dict to create the column structure
 
 op = pd.DataFrame(dict)
 op.to_csv('maxvalue.csv')  # saving the output list to a single csv file
