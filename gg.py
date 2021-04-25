@@ -26,7 +26,7 @@ files = [file for file in os.listdir('./csvdata')]  # list of files in folder
 output = []  # contains max values of each csv, should have the same number of entries as the total number of csv files
 
 for file in files:
-    df = pd.read_csv(file, sep=';', engine='python', names=column_names)
+    df = pd.read_csv(file, sep=';', engine='python', names=column_names)  # sep='' contains the separator, usually ' ', ',', '_', etc
 
     # creating empty lists
     xVal = []
